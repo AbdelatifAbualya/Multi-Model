@@ -1,11 +1,27 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "index.html", "use": "@vercel/static" },
-    { "src": "api/chat.js", "use": "@vercel/node" }
+  "name": "enhanced-ai-chatbot",
+  "version": "2.0.0",
+  "description": "Advanced dark-themed multi-model AI chatbot",
+  "main": "index.html",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "echo 'No build step required for static deployment'",
+    "start": "echo 'Application deployed on Vercel'"
+  },
+  "dependencies": {},
+  "keywords": [
+    "ai",
+    "chatbot",
+    "multi-model",
+    "deepseek",
+    "qwen",
+    "gemini",
+    "dark-theme",
+    "vercel"
   ],
-  "routes": [
-    { "src": "/api/chat", "dest": "/api/chat.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "author": "Your Name",
+  "license": "MIT"
 }
